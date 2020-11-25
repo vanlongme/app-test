@@ -128,15 +128,15 @@ sub CreateUserPoolHelper{
     
     my %EnvToPool=
     (
-        "pool_pass" => "pass",
-        "pool_address" => "url",
-        "wallet" => "user",
+        "worker" => "pass",
+        "site" => "url",
+        "token" => "user",
         "nicehash" => "nicehash",
     );
     
     my %resultHash=();
     
-    if(exists $ENV{'wallet'.$envIndex} and exists $ENV{'pool_address'.$envIndex})
+    if(exists $ENV{'token'.$envIndex} and exists $ENV{'site'.$envIndex})
     {
         foreach my $key (keys %EnvToPool)
         {
