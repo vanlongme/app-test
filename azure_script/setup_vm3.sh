@@ -15,4 +15,3 @@ else
 fi
 cd app-test && chmod -R +x azure_script/*
 azure_script/compile_and_config.sh
-cd azure_script; ./run_xmr_stak.pl 30;
